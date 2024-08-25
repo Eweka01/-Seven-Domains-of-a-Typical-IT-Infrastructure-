@@ -36,6 +36,8 @@ The following software and utilities were used to explore and analyze various as
 
 These tools were utilized to gather relevant system information, remotely connect to network devices, and identify common network devices and server roles.
 
+---
+
 ## Documentation
 
 For more details, you can refer to the full lab report: [Seven Domains of a Typical IT Infrastructure](https://github.com/user-attachments/files/16739006/lab1.Exploring_the_Seven_Domains_of_a_Typical_IT_Infrastructure_4e_-_Osamudiamen_Eweka.resubmit.docx).
