@@ -1,42 +1,114 @@
-# Seven Domains of a Typical IT Infrastructure
+# Exploring the Seven Domains of a Typical IT Infrastructure
 
----
+**Author**: Osamudiamen Eweka  
+**Course**: CYB-605-Z2 Principles of Cybersecurity  
+**Institution**: Utica University
 
-## Objective
-The objective of this lab is to explore and understand the seven domains of a typical IT infrastructure, including the workstation, LAN, LAN-to-WAN, WAN, remote access, and system/application domains. This involves using common command-line utilities, remote connections, and network devices to gather relevant system information and identify common server roles and network devices. Additionally, the lab aims to provide hands-on experience in applying security controls and measures to protect the IT infrastructure, as well as conducting independent, unguided work to address real-world security challenges and threats.
+## Overview
 
----
+This lab report explores the seven domains of a typical IT infrastructure, focusing on fundamental concepts of information systems security. It provides a hands-on demonstration of various tasks, including reviewing security controls on a Windows workstation, exploring devices on a LAN segment, connecting to a router-firewall device, and examining the network perimeter. The lab also includes research-based exercises to identify threats and security controls in the User Domain, as well as recommendations for additional security controls across different IT domains.
 
-## Skills Learned
+## Objectives
 
-- **IT Infrastructure Domains**: Gained a comprehensive understanding of the seven domains of a typical IT infrastructure.
-- **Security Controls**: Reviewed and applied basic security controls on Windows workstations.
-- **Network Devices**: Explored devices within the LAN segment, understanding their roles and configurations.
-- **pfSense Application**: Learned key functionalities of pfSense, including routing, Network Address Translation (NAT), and packet filtering.
-- **Server Roles**: Examined common server roles such as Domain Controller, DNS Server, and Web Server, gaining insights into their importance in IT infrastructures.
-- **Command-Line Utilities**: Utilized various command-line tools to manage and configure systems.
-- **Remote Connections**: Used PuTTY for establishing remote connections to network devices and servers.
-- **Documentation**: Created documentation using screen captures to record lab results and configurations.
+- Explore and understand the seven domains of a typical IT infrastructure: Workstation, LAN, LAN-to-WAN, WAN, Remote Access, and System/Application domains.
+- Use command-line utilities, remote connections, and network devices to gather relevant system information.
+- Identify common server roles and network devices.
+- Apply security controls and measures to protect the IT infrastructure.
+- Conduct independent research to address real-world security challenges and threats.
 
----
+## Lab Setup
 
-## Tools Used
+### Lab Environment Details
 
-The following software and utilities were used to explore and analyze various aspects of a typical IT infrastructure:
+The lab environment consists of the following systems and tools:
 
-- **PuTTY**: For remote connections to network devices and servers.
-- **Ping**: To test network connectivity between devices.
-- **Open vSwitch**: Virtual network switch for creating and managing virtualized network environments.
-- **TrueNAS**: Network-attached storage solution for managing storage systems.
-- **pfSense**: Open-source firewall/router for routing, Network Address Translation (NAT), and packet filtering.
-- **Traceroute**: Utility to trace the path packets take across a network and identify network hops.
-- **Nslookup**: DNS query tool to gather domain name and IP address information.
-- **OpenVPN**: VPN solution to establish secure remote connections.
-- **OWASP Juice Shop**: Vulnerable web application used for security testing and training.
+- **Systems**:
+  - vWorkstation (Windows: Server 2022)
+  - Switch01 (Linux: Debian 11)
+  - FileServer01 (FreeBSD)
+  - pfSense-office (FreeBSD)
+  - DomainController01 (Windows: Server 2019)
+  - WebServer01 (Linux: Ubuntu 20)
+  - RemoteWindows01 (Windows: Server 2019)
+  - AttackLinux01 (Linux: Kali)
 
-These tools were utilized to gather relevant system information, remotely connect to network devices, and identify common network devices and server roles.
+- **Software & Utilities**:
+  - PuTTY
+  - Ping
+  - Open vSwitch
+  - TrueNAS
+  - pfSense
+  - Traceroute
+  - Nslookup
+  - OpenVPN
+  - OWASP Juice Shop
 
----
+These tools were used to explore various aspects of a typical IT infrastructure, including network connectivity, security controls, and server roles.
+
+## Hands-On Demonstrations
+
+### 1. Exploring the Workstation Domain
+Participants operated as a desktop support engineer and explored security controls on a Windows workstation. Key tasks included:
+
+- Logging in as the primary user
+- Verifying automatic system updates
+- Analyzing Virus & Threat Protection settings
+- Testing application installation restrictions
+- Evaluating email security solutions
+
+### 2. Exploring the LAN Domain
+This segment focused on networking and network security within the LAN Domain. Participants explored the network configuration, reviewed the Address Resolution Protocol (ARP) table, and established remote connections to devices.
+
+### 3. Exploring the LAN-to-WAN Domain
+Participants broadened their exploration to include routing functions managed by the pfSense firewall/router software. Tasks included:
+
+- Accessing the pfSense webGUI
+- Reviewing NAT and firewall configurations
+- Exploring routing configurations and static routes
+- Running traceroutes to local and remote hosts
+
+## Applied Learning
+
+### 1. Exploring the WAN Domain
+The WAN Domain exploration covered wide-area network connections between remote sites and the simulated public Internet. Key tasks involved inspecting the routing table and analyzing site-to-site VPN configurations.
+
+### 2. Exploring the Remote Access Domain
+This segment focused on secure remote access through VPN connections. Participants established secure tunnels, connected to internal resources, and verified DNS lookups.
+
+### 3. Exploring the System/Application Domain
+Participants examined critical systems and applications, such as domain controllers, web servers, and file servers. Tasks included:
+
+- Navigating operating systems and executing commands
+- Reviewing group policies and DNS entries
+- Interacting with the OWASP Juice Shop application
+- Exploring NAS configurations for redundancy and data security
+
+## Research and Analysis
+
+### Key Findings
+- **User Domain Threats**: Phishing attacks and insider threats.
+- **User Domain Security Controls**: User awareness training and access controls.
+  
+### Security Control Recommendations
+- **Workstation Domain**: Endpoint protection software
+- **LAN Domain**: Network segmentation
+- **LAN-to-WAN Domain**: Intrusion prevention system (IPS)
+- **WAN Domain**: Site-to-site VPN
+- **Remote Access Domain**: Multi-factor authentication (MFA)
+- **System/Application Domain**: Application whitelisting
+
+## Conclusion
+
+This lab provided a comprehensive exploration of IT infrastructure security, covering essential security practices across various domains. Through hands-on experience, participants gained valuable skills in securing an organization's IT assets, making informed decisions on applying security controls, and addressing real-world threats.
+
+## References
+
+- Eldardiry, H., Bart, E., Liu, J., Hanley, J., Price, B., & Brdiczka, O. (2013). Multi-Domain Information Fusion for Insider Threat Detection. IEEE Xplore. https://doi.org/10.1109/SPW.2013.14
+- Ruotsalainen, P. (2013). Endpoint Protection Security System for an Enterprise. https://www.theseus.fi/handle/10024/62932
+- OWASP. (n.d.). Juice Shop - Insecure Web Application for Training. OWASP. https://owasp.org/www-project-juice-shop/
+
+For a complete list of references, please refer to the full lab report.
+
 
 ## Documentation
 
